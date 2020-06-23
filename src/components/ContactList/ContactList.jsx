@@ -15,7 +15,6 @@ export default function ContactList(props){
 			}
 		}
 		setUsers(newUsers);
-		console.log(id);
 	}
 	const addUser = (user) =>{
 		let newUsers = [...users];
