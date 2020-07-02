@@ -1,0 +1,15 @@
+.dark-color {
+  color: darkgray;
+}
+.dark-background {
+  background-color: #121212;
+}
+.light-color {
+  color: #121212;
+}
+.light-background {
+  background-color: darkgray;
+}
+a {
+  text-decoration: none;
+}
