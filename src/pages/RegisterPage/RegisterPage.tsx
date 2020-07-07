@@ -31,7 +31,7 @@ export default function RegisterPage() {
           email: values.email,
           password: values.password,
         }),
-      }).then((response) => alert(response.status));
+      }).then((response) => alert(JSON.stringify(response.json())));
     },
   });
   return (
