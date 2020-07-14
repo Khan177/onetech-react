@@ -3,9 +3,7 @@ import { connect } from "react-redux";
 
 import "./ProductsItem.css";
 import { Button } from "@material-ui/core";
-import { ProductsItemType } from "../../types/products-item.types";
 import { addOrderItem } from "../../store/actions/actions";
-import { useDispatch } from "react-redux";
 
 function ProductsItem(props: any) {
   const addCardToOrder = (): void => {

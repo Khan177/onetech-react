@@ -7,10 +7,9 @@ const orders = (state: any = [], action: any) => {
           isContains = true;
           ++orderItem.count;
           orderItem.totalPrice += orderItem.price;
-          console.log(orderItem.count);
         }
+        return orderItem;
       });
-      console.log(isContains);
       return !isContains
         ? [
             ...state,
@@ -26,7 +25,6 @@ const orders = (state: any = [], action: any) => {
     case "REMOVE_ORDER_ITEM":
       return state.filter((orderItem: any) => orderItem.id !== action.id);
     case "CHANGE_ORDER_ITEM_QUANTITY":
-      console.log(action.count);
       return action.count > 0
         ? state.map((orderItem: any) =>
             orderItem.id === action.id

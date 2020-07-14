@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import "./Cart.css";
 import CartItem from "../../components/CartItem/CartItem";
 import { CartItemType } from "../../types/cart-item.types";
 
 function Cart({ orders }: any) {
-  console.log(orders);
   const total: number = orders.reduce((a: any, b: any) => a + b.totalPrice, 0);
   return (
     <div className="cart">
